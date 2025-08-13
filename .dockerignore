@@ -1,0 +1,9 @@
+.git
+.gcloudignore
+node_modules
+.next
+out
+build
+.vscode
+.env*
+serviceAccountKey.json

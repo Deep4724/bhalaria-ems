@@ -17,18 +17,14 @@
 
 
 // firebaseAdmin.ts
-import serviceAccountRaw from '../serviceAccountKey.json';
-import { initializeApp, cert } from 'firebase-admin/app';
+// firebase-admin.ts
+import { initializeApp, applicationDefault } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
-import type { ServiceAccount } from 'firebase-admin';
 
-// ✅ Cast raw key into correct type
-const serviceAccount = serviceAccountRaw as ServiceAccount;
-
-// ✅ Initialize Admin SDK with service account
+// ✅ Initialize Admin SDK with default credentials (Cloud Run's service account)
 const app = initializeApp({
-  credential: cert(serviceAccount),
+  credential: applicationDefault(),
 });
 
 // ✅ Get Admin Auth and Firestore instances

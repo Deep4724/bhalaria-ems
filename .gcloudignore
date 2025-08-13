@@ -1,0 +1,20 @@
+# Ignore git
+
+.git
+.gitignore
+
+# Node and build artifacts
+
+node_modules
+.next
+out
+build
+
+# Environment & secrets
+
+.env\*
+serviceAccountKey.json
+
+# IDE stuff
+
+.vscode
