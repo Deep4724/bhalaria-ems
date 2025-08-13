@@ -7,3 +7,5 @@ build
 .vscode
 .env*
 serviceAccountKey.json
+# ensure env.public IS included
+!env.public
