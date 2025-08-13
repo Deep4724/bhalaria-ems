@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: [
+      "res.cloudinary.com",               // ✅ Cloudinary
+      "firebasestorage.googleapis.com",   // ✅ Firebase Storage
+      "i.pravatar.cc"                     // (Optional fallback avatar provider)
+    ],
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

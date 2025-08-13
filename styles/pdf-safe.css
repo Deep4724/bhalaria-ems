@@ -1,0 +1,11 @@
+/* styles/pdf-safe.css */
+
+.pdf-safe *,
+.pdf-safe {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
+  box-shadow: none !important;
+  --tw-bg-opacity: 1 !important;
+  --tw-text-opacity: 1 !important;
+}
